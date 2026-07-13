@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable, of, combineLatest } from 'rxjs';
 import { startWith, map } from 'rxjs/operators';
-import { State, states } from './shared/State';
+import { State, states } from './shared/state';
 
 @Component({
   selector: 'app-root',
