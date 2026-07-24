@@ -1,0 +1,7 @@
+<input type="text" [formControl]="filter" placeholder="Filter states...">
+
+<ul>
+  @for (state of filteredStates$ | async; track state.abbreviation) {
+    <li>{{ state.name }}</li>
+  }
+</ul>
